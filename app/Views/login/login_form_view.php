@@ -8,11 +8,13 @@
             <form action="<?php echo base_url() . $form_action; ?>" method="POST" class="m-4 p-4 rounded" style="background-color: <?php echo $form_color; ?>">
                 <div class="form-group">
                     <label for="username">User name</label>
-                    <input type="text" class="form-control" name="username" value="<?php set_value('username'); ?>">   
+                    <input type="text" class="form-control" name="username" value="<?php set_value('username'); ?>">  
+       <?= csrf_field() ?>
                 </div>
                 <div class="form-group">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" name="password" value="">   
+                    <input type="password" class="form-control" name="password" value="">  
+                  
                 </div>
                 <div class="row">
                     <?php if (isset($validation)): ?>

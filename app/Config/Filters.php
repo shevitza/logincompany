@@ -13,18 +13,24 @@ class Filters extends BaseConfig {
         'toolbar' => \CodeIgniter\Filters\DebugToolbar::class,
         'honeypot' => \CodeIgniter\Filters\Honeypot::class,
         'staff' => \App\Filters\Staff::class,
-        'cpanel'=>\App\Filters\Cpanel::class,
+        'cpanel' => \App\Filters\Cpanel::class,
     ];
     // Always applied before every request
+//    public $globals = [
+//        'before' => [
+//        //'honeypot'
+//        // 'csrf',
+//        ],
+//        'after' => [
+//            'toolbar',
+//        //'honeypot'
+//        ],
+//    ];
     public $globals = [
         'before' => [
-        //'honeypot'
-        // 'csrf',
-        ],
-        'after' => [
-            'toolbar',
-        //'honeypot'
-        ],
+            //'honeypot'
+            'csrf'
+        ]
     ];
     // Works on all of a particular HTTP method
     // (GET, POST, etc) as BEFORE filters only
