@@ -1,7 +1,7 @@
 # logincompany
 Login with different roles for small company with Codeigniter 4.04
 
-Every registered user has role register_only in the first moment. Adninistrator is making the registration for every new employee.
+Every registered user has role register_only at the first moment. Adninistrator is making the registration for every new employee.
 
 It is not possible to delete user that is former employee or user that is active after first change of his password.
 If the user is register_only he do not have any right excluding to show his profile and change his password.
