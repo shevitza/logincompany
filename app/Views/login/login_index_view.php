@@ -86,6 +86,7 @@
     <div class="col-12">
         <p>It is not possible to delete user that is former employee or user that is active after first change of his password.</p>
         <p>If the user is register_only he do not have any right excluding to show his profile.</p>
+        <p>For this example app passwords are: after register: 111111, after login:222222</p>
     </div>
 </div>
 
